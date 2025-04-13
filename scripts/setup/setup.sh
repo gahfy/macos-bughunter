@@ -30,9 +30,9 @@ echo '        fi' >> ${BUILD_DIR}/profile.sh
 echo '    fi' >> ${BUILD_DIR}/profile.sh
 echo 'done' >> ${BUILD_DIR}/profile.sh
 
-ZSHRC="$HOME/.zshrc"
+ZPROFILE="$HOME/.zprofile"
 LINE="source ${BUILD_DIR}/profile.sh"
 
-if ! grep -Fxq "$LINE" "$ZSHRC"; then
-    echo "$LINE" >> "$ZSHRC"
+if ! grep -Fxq "$LINE" "$ZPROFILE"; then
+    echo "$LINE" >> "$ZPROFILE"
 fi
