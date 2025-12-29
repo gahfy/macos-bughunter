@@ -3,8 +3,10 @@
 set -e
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+${SCRIPT_DIR}/brotli.sh
 ${SCRIPT_DIR}/cmake.sh
 ${SCRIPT_DIR}/googletest.sh
+${SCRIPT_DIR}/llvm.sh
 ${SCRIPT_DIR}/mozilla-ca-cert.sh
 ${SCRIPT_DIR}/ninja.sh
 ${SCRIPT_DIR}/openssl.sh

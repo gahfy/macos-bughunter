@@ -25,8 +25,9 @@ cmake -DCMAKE_INSTALL_PREFIX=${BUILD_DIR}/${TEMP_PREFIX}googletest-${GOOGLETEST_
     -DCMAKE_INSTALL_NAME_DIR=${BUILD_DIR}/${TEMP_PREFIX}googletest-${GOOGLETEST_VERSION}/lib \
     -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON \
     ../googletest-${GOOGLETEST_VERSION}
-cmake  --build .
-cmake  --build . --target install
+cmake --build .
+cmake --build . --target test
+cmake --build . --target install
 cd ${SOURCES_DIR}
 rm -rf googletest-build
 mkdir googletest-build
@@ -35,6 +36,7 @@ cmake -DCMAKE_INSTALL_PREFIX=${BUILD_DIR}/${TEMP_PREFIX}googletest-${GOOGLETEST_
     -DBUILD_SHARED_LIBS=OFF \
     ../googletest-${GOOGLETEST_VERSION}
 cmake  --build .
+cmake --build . --target test
 mv ./lib/*.a ${BUILD_DIR}/${TEMP_PREFIX}googletest-${GOOGLETEST_VERSION}/lib/
 ln -s ${BUILD_DIR}/${TEMP_PREFIX}googletest-${GOOGLETEST_VERSION} ${INSTALL_DIR}/googletest
 cd ..

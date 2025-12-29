@@ -20,7 +20,7 @@ tar -xf Python-${PYTHON_VERSION}.tar.xz
 mkdir Python-build
 cd Python-build
 ../Python-${PYTHON_VERSION}/configure \
-    --with-openssl=${BUILD_DIR}/${TEMP_PREFIX}openssl-${OPENSSL_VERSION} \
+    --with-openssl=${BUILD_DIR}/openssl-${OPENSSL_VERSION} \
     --prefix=${BUILD_DIR}/${TEMP_PREFIX}Python-${PYTHON_VERSION} \
     --with-ensurepip=no
 make -j12
