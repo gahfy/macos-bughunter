@@ -6,7 +6,7 @@ source ${SCRIPT_DIR}/../utils/constants.sh
 source ${BUILD_DIR}/profile.sh
 
 ${SCRIPT_DIR}/../utils/download.sh "https://github.com/pypa/pip/archive/refs/tags/${PIP_VERSION}.tar.gz" \
-    "a6850c8567082bbf98483a45e523c4de12132136d2b0aa388ac619c02ffd0c8f6aea7d727f7d84167dadec5f1e56dd478b2233b0caa5d9b3e5cadc9e1f3dc12c" \
+    "f50db092213ec3bb819d3da5669f73d119b5ec7f7ac5e8a587a17c27eafa32bc17a057df09389c526a3769ef3577f5553187d54ceffa89aed63f4b4498ff044e" \
     "pip-${PIP_VERSION}.tar.gz"
 
 cd ${SOURCES_DIR}

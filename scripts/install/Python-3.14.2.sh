@@ -12,7 +12,7 @@ else
 fi
 
 ${SCRIPT_DIR}/../utils/download.sh "https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tar.xz" \
-    "f7559b6dceae69f48742af0a6497fbec42cd1e5304f64b6eb9d89222a1171ccf12fa186cc0decabb4e98d05223184967a4a7537754c01083dacdc9073cb1a578" \
+    "165256b4c713e0262767cd7a2c65622f3f086423524646a39bfa64912376be9e5b70863d5a3c95224b516152d0b79e7ccbfe2f2cf35b809d132f2c38ebb3ab3b" \
     "Python-${PYTHON_VERSION}.tar.xz"
 
 cd ${SOURCES_DIR}

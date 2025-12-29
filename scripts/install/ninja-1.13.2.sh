@@ -12,7 +12,7 @@ else
 fi
 
 ${SCRIPT_DIR}/../utils/download.sh "https://github.com/ninja-build/ninja/archive/refs/tags/v${NINJA_VERSION}.tar.gz" \
-    "d6e6f0e89a4844a69069ff0c7cefc07704a41c7b0c062a57534de87decdde63e27928147b321111b806aa7efa1061f031a1319b074391db61b0cbdccf096954c" \
+    "c0b401b4db91a2eea01a474ee979b2c6f1daa97b4c8d1f856871ce5f6d567c4b26d6246bc57e2a5f914329302abcd9c00ab0d4394a25f2ad502b6b00a07903d2" \
     "ninja-${NINJA_VERSION}.tar.gz"
 
 cd ${SOURCES_DIR}
@@ -20,6 +20,7 @@ tar -xzf ninja-${NINJA_VERSION}.tar.gz
 mkdir ninja-build
 cd ninja-build
 cmake -DCMAKE_INSTALL_PREFIX=${BUILD_DIR}/${TEMP_PREFIX}ninja-${NINJA_VERSION} \
+    -DCMAKE_CXX_STANDARD=17 \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     -DGTest_DIR=${INSTALL_DIR}/googletest \
     -DGMOCK_LIBRARY=${INSTALL_DIR}/googletest/lib/libgmock.dylib \

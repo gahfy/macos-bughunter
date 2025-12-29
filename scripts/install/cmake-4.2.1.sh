@@ -12,7 +12,7 @@ else
 fi
 
 ${SCRIPT_DIR}/../utils/download.sh "https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}.tar.gz" \
-    "25f3e93b1fe09b4aacf6f6361942f829c4833075a05ad26a9bdbd1278f5f6a78389e619e478152e2ecc4108a4bccc3ed901f96db0571dc05f1feba4e04f8f516" \
+    "75617692e975f5974bc015d62983e48d0dedaed2daa1e25d93807d25c6ed836e73e37de064e1e924078162fc20f38f9210ac1c4d699c9bd795050119abc848ce" \
     "cmake-${CMAKE_VERSION}.tar.gz"
 
 cd ${SOURCES_DIR}

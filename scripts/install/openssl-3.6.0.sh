@@ -12,7 +12,7 @@ else
 fi
 
 ${SCRIPT_DIR}/../utils/download.sh "https://github.com/openssl/openssl/releases/download/openssl-${OPENSSL_VERSION}/openssl-${OPENSSL_VERSION}.tar.gz" \
-    "39cc80e2843a2ee30f3f5de25cd9d0f759ad8de71b0b39f5a679afaaa74f4eb58d285ae50e29e4a27b139b49343ac91d1f05478f96fb0c6b150f16d7b634676f" \
+    "866825a1cdf0b705b409402fbc7a713e7d9b8e7736c5126be57b354927954c148a341fc52b02c0629c1e015a889bfd40217f8e703b73235892e91da060909b76" \
     "openssl-${OPENSSL_VERSION}.tar.gz"
 
 cd ${SOURCES_DIR}

@@ -6,7 +6,7 @@ source ${SCRIPT_DIR}/../utils/constants.sh
 source ${BUILD_DIR}/profile.sh
 
 ${SCRIPT_DIR}/../utils/download.sh "https://curl.se/ca/cacert-${MOZILLA_CA_CERT_VERSION}.pem" \
-    "e5fe41820460e6b65e8cd463d1a5f01b7103e1ef66cb75fedc15ebcba3ba6600d77e5e7c2ab94cbb1f11c63b688026a04422bbe2d7a861f7a988f67522ffae3c" \
+    "aef293e084ef15a55a4f9dee395ee4bbbadea1f5a49c0590e0ff67a0630b5298d2bc79699ab95d70be0d2d06f9f1e55fe676b3e1d5ff912df88f2d6bff0d5736" \
     "mozilla-ca-cert-${MOZILLA_CA_CERT_VERSION}.pem"
 
 cd ${SOURCES_DIR}
